@@ -1,8 +1,9 @@
+operators = ['+', '-', '*', '/']
 def input_numbers():
     global num1, num2, operator, result
     num1 = float(input('Enter the first number:'))
     num2 = float(input('Enter the second number:'))
-    operators = ['+', '-', '*', '/']
+    
     operator = raw_input('Choose the operation (+, -, *, /):')
 
 
