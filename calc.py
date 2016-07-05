@@ -2,11 +2,7 @@ def input_numbers():
     global num1, num2, operator, result
     num1 = float(input('Enter the first number:'))
     num2 = float(input('Enter the second number:'))
-    result = {'+': num1 + num2,
-              '-': num1 - num2,
-              '*': num1 * num2,
-              '/': num1 / num2
-              }
+    operators = ['+', '-', '*', '/']
     operator = raw_input('Choose the operation (+, -, *, /):')
 
 
@@ -26,7 +22,7 @@ while True:
         print('Division by zero. Try again.')
         print('')
         input_numbers()
-    elif operator not in result:
+    elif operator not in operators:
         print('Hey, You can use only these operators: +, -, *, /')
         operator = raw_input('Choose the operation (+, -, *, /):')
     else:
